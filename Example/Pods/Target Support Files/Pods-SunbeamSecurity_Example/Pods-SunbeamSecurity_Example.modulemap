@@ -1,0 +1,6 @@
+framework module Pods_SunbeamSecurity_Example {
+  umbrella header "Pods-SunbeamSecurity_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

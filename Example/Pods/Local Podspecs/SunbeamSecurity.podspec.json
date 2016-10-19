@@ -1,0 +1,22 @@
+{
+  "name": "SunbeamSecurity",
+  "version": "0.1.0",
+  "summary": "SunbeamSecurity is base on CocoaSecurity and make it easy for use.",
+  "homepage": "https://github.com/sunbeamChen/SunbeamSecurity",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sunbeamChen": "sunbeamhome@163.com"
+  },
+  "source": {
+    "git": "https://github.com/sunbeamChen/SunbeamSecurity.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "source_files": "SunbeamSecurity/Classes/**/*",
+  "public_header_files": "Pod/Classes/**/*.h"
+}

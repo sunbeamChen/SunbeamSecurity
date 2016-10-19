@@ -5,11 +5,17 @@
 [![License](https://img.shields.io/cocoapods/l/SunbeamSecurity.svg?style=flat)](http://cocoapods.org/pods/SunbeamSecurity)
 [![Platform](https://img.shields.io/cocoapods/p/SunbeamSecurity.svg?style=flat)](http://cocoapods.org/pods/SunbeamSecurity)
 
+## Description
+
+SunbeamSecurity is base on CocoaSecurity and make it easy for use.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+iOS > 6.0
 
 ## Installation
 
@@ -22,7 +28,7 @@ pod "SunbeamSecurity"
 
 ## Author
 
-sunbeamChen, sunbeamhome@163.com
+sunbeamChen, sunbeamhome@163.com, chenxun1990@126.com
 
 ## License
 

@@ -1,0 +1,16 @@
+PODS:
+  - SunbeamSecurity (0.1.0)
+
+DEPENDENCIES:
+  - SunbeamSecurity (from `../`)
+
+EXTERNAL SOURCES:
+  SunbeamSecurity:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SunbeamSecurity: 8ca3dd4d3081ec4245bb2cb289d9ca212f73b998
+
+PODFILE CHECKSUM: 737cdacf8c44af272888b6db4ee2c4c46b29bbd0
+
+COCOAPODS: 1.0.1
