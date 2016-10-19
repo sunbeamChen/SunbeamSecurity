@@ -10,20 +10,6 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>05F2751136F80707799B103A344DAE40</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B6084C9ECC8ED70A90B29198A83AAE47</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
 		<key>068BA21F1AF6AFD4313FD99E016A31B9</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -947,6 +933,20 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>8C4A895CE8904D49C9E750D82B4D5FD0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>81C5B6F58243BB9899C49615DE020964</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
 		<key>8F3867A2344131D9EA9F647B37AF92A7</key>
 		<dict>
 			<key>fileRef</key>
@@ -1003,20 +1003,6 @@
 			<string>Pods-SunbeamSecurity_Example.debug.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A232C58452E73EB4331A561980096905</key>
-		<dict>
-			<key>fileRef</key>
-			<string>81C5B6F58243BB9899C49615DE020964</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
 		<key>A2AB15EBB1989B9A123E747AE7B9210E</key>
 		<dict>
@@ -1640,6 +1626,20 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>F1E2B794FDE029125D97AD8811F80878</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B6084C9ECC8ED70A90B29198A83AAE47</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
 		<key>F647A1E32CEFC85EF181014DB4B76EAE</key>
 		<dict>
 			<key>buildConfigurations</key>
@@ -1660,8 +1660,8 @@
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>A232C58452E73EB4331A561980096905</string>
-				<string>05F2751136F80707799B103A344DAE40</string>
+				<string>8C4A895CE8904D49C9E750D82B4D5FD0</string>
+				<string>F1E2B794FDE029125D97AD8811F80878</string>
 				<string>8F3867A2344131D9EA9F647B37AF92A7</string>
 				<string>39A89C3BF2E72AA7EE55101DD7CD8D13</string>
 				<string>23DB38FA46E0640A419724AE224D4806</string>
