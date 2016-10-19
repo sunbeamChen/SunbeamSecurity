@@ -1,0 +1,6 @@
+framework module SunbeamSecurity {
+  umbrella header "SunbeamSecurity.h"
+
+  export *
+  module * { export * }
+}

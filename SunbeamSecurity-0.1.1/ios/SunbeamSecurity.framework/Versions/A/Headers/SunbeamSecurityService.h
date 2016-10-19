@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#define SUNBEAM_SECURITY_VERSION @"0.1.2"
-
 @interface SunbeamSecurityService : NSObject
 
 + (NSString *) md5:(NSString *) target;
