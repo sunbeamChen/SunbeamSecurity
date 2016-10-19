@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SunbeamSecurity_Example' do
+  pod 'SunbeamSecurity', :path => '../'
+
+  target 'SunbeamSecurity_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
