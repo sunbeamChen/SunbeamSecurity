@@ -1,5 +1,5 @@
 PODS:
-  - SunbeamSecurity (0.1.3)
+  - SunbeamSecurity (0.1.4)
 
 DEPENDENCIES:
   - SunbeamSecurity (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SunbeamSecurity: 9a67a86f609156552de06e43683a1ee591abdf52
+  SunbeamSecurity: 59a05f06cbcbebd332ef5e1639d73648cfb701b5
 
 PODFILE CHECKSUM: 737cdacf8c44af272888b6db4ee2c4c46b29bbd0
 

@@ -44,26 +44,40 @@
     return encodeResult.hex;
 }
 
-+ (NSData *) encryptTargetData:(NSData *) target key:(NSString *) key iv:(NSString *) iv
++ (NSString *) encryptJsonObject:(id) jsonObject key:(NSString *) key iv:(NSString *) iv
 {
+    NSError* error = nil;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:jsonObject options:NSJSONWritingPrettyPrinted error:&error];
+    if (error) {
+        return nil;
+    }
+    
     NSData* keyData = [self dataFromHexString:key];
     
     NSData* ivData = [self dataFromHexString:iv];
     
-    CocoaSecurityResult* encodeResult = [CocoaSecurity aesEncryptWithData:target key:keyData iv:ivData];
+    CocoaSecurityResult* encodeResult = [CocoaSecurity aesEncryptWithData:jsonData key:keyData iv:ivData];
     
-    return encodeResult.data;
+    return [self hexStringFromData:encodeResult.data];
 }
 
-+ (NSData *) decryptTargetData:(NSData *) target key:(NSString *) key iv:(NSString *) iv
++ (id) decryptJsonObject:(NSString *) jsonString key:(NSString *) key iv:(NSString *) iv
 {
+    NSData* jsonData = [self dataFromHexString:jsonString];
+    
     NSData* keyData = [self dataFromHexString:key];
     
     NSData* ivData = [self dataFromHexString:iv];
     
-    CocoaSecurityResult* decryptResult = [CocoaSecurity aesDecryptWithData:target key:keyData iv:ivData];
+    CocoaSecurityResult* decryptResult = [CocoaSecurity aesDecryptWithData:jsonData key:keyData iv:ivData];
     
-    return decryptResult.data;
+    NSError* error = nil;
+    id jsonObject = [NSJSONSerialization JSONObjectWithData:decryptResult.data options:NSJSONReadingAllowFragments error:&error];
+    if (error) {
+        return nil;
+    }
+    
+    return jsonObject;
 }
 
 #pragma mark - private method

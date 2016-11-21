@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SunbeamSecurity'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'SunbeamSecurity is base on CocoaSecurity and make it easy for use.'
   s.homepage         = 'https://github.com/sunbeamChen/SunbeamSecurity'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
