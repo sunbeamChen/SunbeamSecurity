@@ -44,6 +44,28 @@
     return encodeResult.hex;
 }
 
++ (NSData *) encryptTargetData:(NSData *) target key:(NSString *) key iv:(NSString *) iv
+{
+    NSData* keyData = [self dataFromHexString:key];
+    
+    NSData* ivData = [self dataFromHexString:iv];
+    
+    CocoaSecurityResult* encodeResult = [CocoaSecurity aesEncryptWithData:target key:keyData iv:ivData];
+    
+    return encodeResult.data;
+}
+
++ (NSData *) decryptTargetData:(NSData *) target key:(NSString *) key iv:(NSString *) iv
+{
+    NSData* keyData = [self dataFromHexString:key];
+    
+    NSData* ivData = [self dataFromHexString:iv];
+    
+    CocoaSecurityResult* decryptResult = [CocoaSecurity aesDecryptWithData:target key:keyData iv:ivData];
+    
+    return decryptResult.data;
+}
+
 #pragma mark - private method
 + (NSString *) hexStringFromData:(NSData *) data
 {
